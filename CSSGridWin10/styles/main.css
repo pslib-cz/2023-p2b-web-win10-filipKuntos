@@ -21,15 +21,17 @@
 }
 .apps--office {
     display: grid;
-    
+    grid-template-rows:40px repeat(1,1fr);
     grid-area: office;
 }
 .apps--web {
     display: grid;
+    grid-template-rows:40px repeat(1,1fr);
     grid-area: web;
 }
 .apps--other {
     display: grid;
+    grid-template-rows:40px repeat(1,1fr);
     grid-area: other;
 }
 .apps__grid {
@@ -55,7 +57,7 @@
     grid-column-start: 2;
 }
 .app--off-4 {
-    grid-row-start: 2;
+    grid-row: 2 
 }
 .app--off-5 {
     grid-row-start: 1;
