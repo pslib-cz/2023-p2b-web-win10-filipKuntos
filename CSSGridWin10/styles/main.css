@@ -1,0 +1,74 @@
+.start-panel {
+    display: grid;
+    grid-template-columns: 50px repeat(2, minmax(170px,auto));
+    gap: 5px;
+}
+.start-panel__icons {
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+
+
+}
+.start-panel__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px,auto));
+
+    grid-template-areas: "office other"
+    "web  other";
+
+    gap: 5px;
+
+}
+.apps--office {
+    display: grid;
+    
+    grid-area: office;
+}
+.apps--web {
+    display: grid;
+    grid-area: web;
+}
+.apps--other {
+    display: grid;
+    grid-area: other;
+}
+.apps__grid {
+    display: grid;
+
+    grid-template-columns: 50px repeat(3, 1fr)1fr;
+    grid-template-rows: repeat(1,auto);
+    gap: 5px;
+    grid-auto-flow: column;
+}
+.app--g2x2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.app--g2x1 {
+    grid-row: span 2;
+}
+.app--g1x2 {
+    grid-column: span 2;
+}
+.app--off-3 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+.app--off-4 {
+    grid-row-start: 2;
+}
+.app--off-5 {
+    grid-row-start: 1;
+    grid-column-start: 5;
+}
+.app--in-3 {
+    grid-column-start: 3;
+}
+.app--fun-2 {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+}
+.app--fun-3 {
+    grid-column: 5 / span 2;
+    grid-row: 5 / span 2;
+}
